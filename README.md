@@ -484,3 +484,4 @@ Assumes **~2–3 hours/day, 6 days/week**. If you have more/less time, keep the 
 - **Outcome**: Solid MERN + TS portfolio project, working deployment, and structured interview prep.
 
 
+
