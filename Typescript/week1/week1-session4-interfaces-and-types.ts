@@ -177,7 +177,7 @@ console.log(`  type UserWithTimestamp = User & Timestamped`);
 // ========== TYPE ALIASES FOR COMPLEX TYPES ==========
 
 // Union types
-type ID = string | number;
+type IDS = string | number;
 
 // Tuple types
 type Coordinate = [number, number];
