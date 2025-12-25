@@ -30,8 +30,14 @@ type Result<T> =
   | { success: false; error: string };
 
 function processResult<T>(result: Result<T>): T {
-  // TODO: Fix the type error - how do you safely extract the data?
-  return result.data; // This will error - fix it!
+  // Fix: Use type narrowing with the discriminator property 'success'
+  // TypeScript narrows the type based on the success property
+  if (result.success) {
+    // TypeScript knows result.data exists here because success is true
+    return result.data;
+  }
+  // If success is false, throw an error with the error message
+  throw new Error(result.error);
 }
 
 /**
